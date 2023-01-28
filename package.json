@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"daisyui": "^2.49.0",
+		"svelte-loading-spinners": "^0.3.4",
 		"svelte-theme-select": "^0.0.4"
 	}
 }
