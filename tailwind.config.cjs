@@ -26,6 +26,7 @@ module.exports = {
       },
       animation: {
         glow: "enterLeft 0.5s ease forwards, glow 2s ease 1s forwards",
+        glowContinuous: "glow 6s ease 0s infinite",
         enterLeft: "enterLeft 1s ease forwards",
         enterRight: "enterRight 1s ease 0.5s forwards",
         enterBottom: "enterBottom 1s ease 1s forwards",
