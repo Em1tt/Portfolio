@@ -22,6 +22,15 @@ module.exports = {
         leaveTop: {
           '0%': {opacity:100, top: 0},
           '100%': { opacity: 0, top: "-20px" }
+        },
+        rotate: {
+          '0%': {rotate: "0deg"},
+          '50%': {scale: "1 1.5"},
+          '100%': {rotate: "360deg"}
+        },
+        fadeIn: {
+          '0%': {opacity: 0},
+          '100%': {opacity: 1}
         }
       },
       animation: {
@@ -31,6 +40,7 @@ module.exports = {
         enterRight: "enterRight 1s ease 0.5s forwards",
         enterBottom: "enterBottom 1s ease 1s forwards",
         leaveTop: "leaveTop 1s ease 3s forwards",
+        rotate: "fadeIn 1s ease 2s forwards, rotate 10s linear infinite",
       }
     },
   },

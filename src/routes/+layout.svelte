@@ -1,3 +1,4 @@
+<!--
 <script lang="ts">
 	import '../app.css';
 
@@ -6,7 +7,8 @@
 </script>
 
 <Navigation/>
-
+-->
 <slot />
-
+<!--
 <Loader/>
+-->
