@@ -1,7 +1,7 @@
 <!--INSPIRED BY TAILWINDCSS NAVBAR-->
 
 <div
-	class="w-full fixed top-0 left-0 bg-slate-900/25 backdrop-blur z-40 border-b border-slate-300/10"
+	class="w-full fixed top-0 left-0 bg-slate-900/25 backdrop-blur z-40 border-b border-slate-300/10 select-none"
 >
 	<div class="mx-auto max-w-7xl">
 		<div class="py-4 px-8">
@@ -11,19 +11,19 @@
 					<nav class="text-sm leading-6 font-semibold text-slate-200 max-sm:hidden">
 						<ul class="flex space-x-8">
 							<li>
-								<a class="hover:text-sky-400" href="/about">About</a>
+								<a class="hover:text-sky-400" href="/about">Portfolio</a>
 							</li>
 							<li>
-								<a class="hover:text-sky-400" href="/skills">Skills</a>
+								<a class="hover:text-sky-400" href="/skills">Games</a>
 							</li>
 							<li>
 								<a class="hover:text-sky-400" href="/contact">Contact</a>
 							</li>
 							<li>
 								<a aria-disabled="true" class="opacity-50 cursor-default" href="/">
-									Showroom
+									API
 									<span
-										class="ml-2 font-medium text-xs leading-5 rounded-full text-yellow-400 px-2 py-0.5 bg-yellow-700/25"
+										class="font-medium text-xs leading-5 rounded-full text-yellow-400 px-2 py-0.5 bg-yellow-700/25"
 										>WIP</span
 									>
 								</a>
