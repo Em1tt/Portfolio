@@ -6,7 +6,7 @@
 
 	const greet = ['Hello', '你好', 'नमस्कार', 'Hola', 'Bonjour', 'Привет', 'Ahoj'];
 
-	let unlockOverflow: boolean = true;
+	let unlockOverflow: boolean = false;
 	let welcome: HTMLElement;
 	let blob: HTMLElement;
 	let main: HTMLElement;
@@ -27,7 +27,7 @@
 		};
 
 		function typeChars(timeout: number, mutatedWord: string, word: string) {
-			setTimeout(() => {
+			setTimeout(() => { 
 				welcome.innerText = welcome.innerText.concat(mutatedWord.charAt(0));
 				if(welcome.innerText.length < word.length) typeChars(Math.floor(Math.random()*(300 - 200 + 1) + 200), mutatedWord.slice(1), word);
 				else deleteChars(3000);
@@ -77,14 +77,14 @@
 <Navigation />
 <div
 	bind:this={blob}
-	class="w-16 h-16 rounded-full backdrop-invert fixed -top-[50px] -left-[50px] z-50 cursor-none pointer-events-none"
+	class="w-16 h-16 rounded-full backdrop-invert fixed -top-[50px] -left-[50px] z-50 cursor-default hidden lg:block pointer-events-none"
 />
 <div
 	class="bg-gray-900 w-screen block {unlockOverflow ? 'overflow-auto' : 'overflow-hidden h-screen'}"
 >
 	<header
 		bind:this={main}
-		class="grid w-screen h-screen place-items-center backdrop-blur-[200px] z-20 cursor-none"
+		class="grid w-screen h-screen place-items-center backdrop-blur-[200px] z-20 cursor-default lg:cursor-none"
 	>
 		<div class="flex flex-col items-center">
 			<h1 bind:this={welcome} class="typewriter text-5xl xl:text-9xl text-neutral-200 text-center min-h-[48px] xl:min-h-[128px] select-none">
@@ -96,7 +96,7 @@
 				}}
 
 				href="#main"
-				class="aspect-square cursor-none mt-8 bg-slate-200/20 rounded-full p-4"
+				class="aspect-square cursor-default lg:cursor-none mt-8 bg-slate-200/20 rounded-full p-4"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-click mx-auto text-neutral-300 drop-shadow-md" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -116,7 +116,7 @@
 		<Zen />
 	</header>
 	<main id="main" class="pt-14">
-		<div class="grid grid-cols-2">
+		<div class="grid grid-cols-2 sm:grid-cols-4">
 			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/logo1.png)] bg-cover">
 				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
 					<h3 class="text-neutral-300 text-sm">Em1t's logo #1</h3>
@@ -153,7 +153,7 @@
 					<p class="mt-4 text-xs text-neutral-400">I have created a detailed 3D model of an M4A1 assault rifle (I'm a fan of FPS games). This model was used in my own FPS game concept.</p>
 				</div>
 			</div>
-			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/earth.png)] bg-left bg-cover">
+			<div class="flex aspect-[2/1] sm:aspect-square col-span-2 row-span-1 sm:row-span-2 group bg-[url(/portfolio/earth.png)] bg-left sm:bg-center bg-cover">
 				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
 					<h3 class="text-neutral-300 text-sm">Blender 3D model #2</h3>
 					<p class="mt-4 text-xs text-neutral-400">This 3D model was created by me, with the help of <a href="https://youtu.be/0YZzHn0iz8U" class="text-white">this tutorial by BlenderGuru</a>. Nevertheless, it's pretty impressive.</p>
@@ -162,6 +162,18 @@
 			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/Game.png)] bg-left bg-cover">
 				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
 					<h3 class="text-neutral-300 text-sm">FPS game concept #1</h3>
+					<p class="mt-4 text-xs text-neutral-400">In this concept, I have managed to create an FPS character controller, imported my own 3D model of an M4, and created plenty of animations, including shooting.</p>
+				</div>
+			</div>
+			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/page1.png)] bg-left bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Website #1</h3>
+					<p class="mt-4 text-xs text-neutral-400">This website was created by me for my planned startup. It has gone through many iterations during the design process, but this is what I settled for. You can find it <a href="https://ametrine.host" class="text-white">Here</a></p>
+				</div>
+			</div>
+			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/page2.png)] bg-left bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Login/Register #1</h3>
 					<p class="mt-4 text-xs text-neutral-400">In this concept, I have managed to create an FPS character controller, imported my own 3D model of an M4, and created plenty of animations, including shooting.</p>
 				</div>
 			</div>
@@ -178,6 +190,7 @@
 				</div>
 			</div>
 		</div>
+		<button class="text-white p-6 bg-sky-400/20 border border-sky-400 rounded">text</button>
 	</main>
 </div>
 
