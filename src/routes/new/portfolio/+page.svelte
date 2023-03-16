@@ -87,7 +87,7 @@
 		class="grid w-screen h-screen place-items-center backdrop-blur-[200px] z-20 cursor-none"
 	>
 		<div class="flex flex-col items-center">
-			<h1 bind:this={welcome} class="typewriter text-9xl text-neutral-200 text-center min-h-[128px] select-none">
+			<h1 bind:this={welcome} class="typewriter text-5xl xl:text-9xl text-neutral-200 text-center min-h-[48px] xl:min-h-[128px] select-none">
 				Hello
 			</h1>
 			<a
@@ -116,65 +116,65 @@
 		<Zen />
 	</header>
 	<main id="main" class="pt-14">
-		<div class="grid grid-cols-6 grid-rows-6">
-			<div class="flex aspect-square group bg-[url(/portfolio/logo1.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+		<div class="grid grid-cols-2">
+			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/logo1.png)] bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Em1t's logo #1</h3>
+					<p class="mt-4 text-xs text-neutral-400">This is the very first variation of my logo</p>
 				</div>
 			</div>
-			<div class="flex aspect-square group bg-[url(/portfolio/logo2.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/logo2.png)] bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Em1t's logo #2</h3>
+					<p class="mt-4 text-xs text-neutral-400">The original version of my logo. Next are just variations.</p>
 				</div>
 			</div>
-			<div class="flex aspect-square group bg-[url(/portfolio/logo3.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/logo4.png)] bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Em1t's logo #3</h3>
+					<p class="mt-4 text-xs text-neutral-400">I have added a cute, small 3D effect to it, and changed the colors.</p>
 				</div>
 			</div>
-			<div class="flex aspect-square group bg-[url(/portfolio/logo4.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/logo5.png)] bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Em1t's logo #4</h3>
+					<p class="mt-4 text-xs text-neutral-400">I've added a heart to the "1" as I felt like it.</p>
 				</div>
 			</div>
-			<div class="flex aspect-square col-span-2 row-span-2 group bg-[url(/portfolio/Lin1.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/background.png)] bg-right bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Background attempt #1</h3>
+					<p class="mt-4 text-xs text-neutral-400">This was made in Photoshop back in 2018. I tried creating a simple background for my school presentation.</p>
 				</div>
 			</div>
-			<div class="flex group col-span-4 row-span-2 bg-[url(/portfolio/m4.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/m4.png)] bg-left bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Blender 3D model #1</h3>
+					<p class="mt-4 text-xs text-neutral-400">I have created a detailed 3D model of an M4A1 assault rifle (I'm a fan of FPS games). This model was used in my own FPS game concept.</p>
 				</div>
 			</div>
-			<div class="flex group aspect-square bg-[url(/portfolio/logo5.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/earth.png)] bg-left bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Blender 3D model #2</h3>
+					<p class="mt-4 text-xs text-neutral-400">This 3D model was created by me, with the help of <a href="https://youtu.be/0YZzHn0iz8U" class="text-white">this tutorial by BlenderGuru</a>. Nevertheless, it's pretty impressive.</p>
 				</div>
 			</div>
-			<div class="flex aspect-square group bg-[url(/portfolio/Lin2.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-[2/1] col-span-2 row-span-1 group bg-[url(/portfolio/Game.png)] bg-left bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">FPS game concept #1</h3>
+					<p class="mt-4 text-xs text-neutral-400">In this concept, I have managed to create an FPS character controller, imported my own 3D model of an M4, and created plenty of animations, including shooting.</p>
 				</div>
 			</div>
-			<div class="flex row-span-2 col-span-3 group bg-[url(/portfolio/earth.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/Lin1.png)] bg-left bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Lin logo #1</h3>
+					<p class="mt-4 text-xs text-neutral-400">This was a profile picture which I made for my Discord moderation bot.</p>
 				</div>
 			</div>
-			<div class="flex row-span-2 col-span-3 group bg-[url(/portfolio/Game.png)] bg-cover">
-				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-6">
-					<h3 class="text-neutral-300 text-lg">Em1t's logo #1</h3>
-					<p class="mt-4 text-neutral-400">Lorem non id aute laborum cillum commodo irure.</p>
+			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/Lin2.png)] bg-left bg-cover">
+				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
+					<h3 class="text-neutral-300 text-sm">Lin logo #2</h3>
+					<p class="mt-4 text-xs text-neutral-400">Lin logo but for the development server, where I tested new features.</p>
 				</div>
 			</div>
 		</div>

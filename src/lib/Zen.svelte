@@ -16,7 +16,7 @@
 </script>
 
 <div class="grid place-items-center absolute w-full h-full -z-10 gap-2 overflow-hidden">
-	<div bind:this={div} data-conf={i} class="wrapper relative aspect-[1.618] w-screen">
+	<div bind:this={div} data-conf={i} class="wrapper relative h-screen w-full">
 		<div />
 		<div />
 		<div />
