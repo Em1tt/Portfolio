@@ -1,6 +1,6 @@
 <!--INSPIRED BY TAILWINDCSS NAVBAR-->
 
-<div
+<header
 	class="w-full fixed top-0 left-0 bg-slate-900/25 backdrop-blur z-40 border-b border-slate-300/10 select-none"
 >
 	<div class="mx-auto max-w-7xl">
@@ -42,17 +42,17 @@
 							</button>
 							<ul class="dropdown-menu absolute hidden text-slate-200 top-6 -left-40 w-48 rounded overflow-hidden">
 								<li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap bg-slate-800" href="/about">About</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap bg-black/80" href="/about">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-slate-800" href="/skills">Skills</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/skills">Games</a>
                                 </li>
                                 <li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-slate-800" href="/contact">Contact</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/contact">Contact</a>
                                 </li>
                                 <li>
-                                    <a aria-disabled="true" class="text-slate-500 cursor-default py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-slate-800" href="/">
-                                        Showroom
+                                    <a aria-disabled="true" class="text-slate-500 cursor-default py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/">
+                                        API
                                         <span
                                             class="ml-2 font-medium text-xs leading-5 rounded-full text-yellow-400 px-2 py-0.5 bg-yellow-700/25"
                                             >WIP</span
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</header>
 
 <style>
 	.dropdown:hover .dropdown-menu {
