@@ -149,7 +149,7 @@
 			<div class="flex aspect-[2/1] col-span-2 row-span-1 lg:aspect-[3/2] lg:row-start-3 lg:row-end-3 lg:col-start-4 lg:col-end-7 lg:bg-center group bg-[url(/portfolio/page2.png)] bg-left bg-cover">
 				<div class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4">
 					<h3 class="text-neutral-300 text-sm md:text-base lg:text-lg">Login/Register #1</h3>
-					<p class="mt-4 text-xs md:text-sm lg:text-md text-neutral-400">In this concept, I have managed to create an FPS character controller, imported my own 3D model of an M4, and created plenty of animations, including shooting.</p>
+					<p class="mt-4 text-xs md:text-sm lg:text-md text-neutral-400">This register page will be used in my personal GitHub project. This is the first design I've made for this register page and I will most likely keep it.</p>
 				</div>
 			</div>
 			<div class="flex aspect-square col-span-1 row-span-1 group bg-[url(/portfolio/Lin1.png)] bg-left bg-cover">
