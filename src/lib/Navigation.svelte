@@ -11,10 +11,10 @@
 					<nav class="text-sm leading-6 font-semibold text-slate-200 max-sm:hidden">
 						<ul class="flex space-x-8">
 							<li>
-								<a class="hover:text-sky-400" href="/about">Portfolio</a>
+								<a class="hover:text-sky-400" href="/portfolio">Portfolio</a>
 							</li>
 							<li>
-								<a class="hover:text-sky-400" href="/skills">Games</a>
+								<a class="hover:text-sky-400" href="/games">Games</a>
 							</li>
 							<li>
 								<a class="hover:text-sky-400" href="/contact">Contact</a>
@@ -42,10 +42,10 @@
 							</button>
 							<ul class="dropdown-menu absolute hidden text-slate-200 top-6 -left-40 w-48 rounded overflow-hidden">
 								<li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap bg-black/80" href="/about">Portfolio</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap bg-black/80" href="/portfolio">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/skills">Games</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/games">Games</a>
                                 </li>
                                 <li>
                                     <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/contact">Contact</a>

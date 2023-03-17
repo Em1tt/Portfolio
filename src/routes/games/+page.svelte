@@ -1,8 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import '../../../app.css';
-    import Scramble from '$lib/Scramble.svelte';
-	import Navigation from '$lib/Navigation.svelte';
 
 	let blob: HTMLElement;
 	onMount(()=>{
@@ -15,7 +12,26 @@
 	});
 </script>
 
-<Navigation/>
+<svelte:head>
+	<title>Em1t | Games</title>
+	<meta
+		name="description"
+		content="Play minigames for free. Made for fun, just for fun."
+	/>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@Em1ttt" />
+	<meta property="og:url" content="https://em1t.dev" />
+	<meta property="og:title" content="Em1t | Developer & designer" />
+	<meta
+		property="og:description"
+		content="Play minigames for free. Made for fun, just for fun."
+	/>
+    <meta property="og:image" content="https://em1t.dev/Em1t.png" />
+	<meta property="og:image:secure_url" content="https://em1t.dev/Em1t.png" />
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="840">
+	<meta property="og:image:height" content="590">
+</svelte:head>
 
 <div class="bg-gray-900">
 	<main class="flex flex-row flex-nowrap w-screen h-screen place-items-center z-20 flex-shrink-0">

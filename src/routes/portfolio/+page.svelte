@@ -1,6 +1,4 @@
 <script lang="ts">
-	import '../../../app.css';
-	import Navigation from '$lib/Navigation.svelte';
 	import Typewriter from '$lib/Typewriter.svelte';
 	import Zen from '$lib/Zen.svelte';
 
@@ -51,7 +49,27 @@
 	});
 </script>
 
-<Navigation />
+<svelte:head>
+	<title>Em1t | Portfolio</title>
+	<meta
+		name="description"
+		content="Welcome to my portfolio. Here you can see some of the projects I've made in the past few years that I'm the most proud of."
+	/>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@Em1ttt" />
+	<meta property="og:url" content="https://em1t.dev" />
+	<meta property="og:title" content="Em1t | Developer & designer" />
+	<meta
+		property="og:description"
+		content="Welcome to my portfolio. Here you can see some of the projects I've made in the past few years that I'm the most proud of."
+	/>
+    <meta property="og:image" content="https://em1t.dev/Em1t.png" />
+	<meta property="og:image:secure_url" content="https://em1t.dev/Em1t.png" />
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="840">
+	<meta property="og:image:height" content="590">
+</svelte:head>
+
 <div
 	bind:this={cursor}
 	class="w-16 h-16 rounded-full backdrop-invert fixed -top-[50px] -left-[50px] z-50 cursor-default hidden xl:block pointer-events-none"
