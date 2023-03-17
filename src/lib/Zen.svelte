@@ -43,25 +43,32 @@
 	}
 	.wrapper > div:nth-child(1) {
 		background-color: #603F8B;
+		will-change: left, top, background-color;
 	}
 	.wrapper > div:nth-child(2) {
 		background-color: #B4FEE7;
 		left: 25%;
+		will-change: left, top, background-color;
 	}
 	.wrapper > div:nth-child(3) {
 		background-color: #A16AE8;
+		will-change: left, top, background-color;
 	}
 	.wrapper > div:nth-child(4) {
 		background-color: #ffb703;
+		will-change: left, top, background-color;
 	}
 	.wrapper > div:nth-child(5) {
 		background-color: #fb8500;
+		will-change: left, top, background-color;
 	}
 	.wrapper > div:nth-child(6) {
 		background-color: #FD49A0;
+		will-change: left, top, background-color;
 	}
 	.wrapper > div:nth-child(7) {
 		background-color: #03045e;
+		will-change: left, top, background-color;
 	}
 
 	.wrapper[data-conf='1'] > div:nth-child(1) {
@@ -105,6 +112,7 @@
 		top: 65%;
 		height: 35%;
 		width: 20%;
+
 	}
 
 	.wrapper[data-conf='2'] > div:nth-child(1) {
