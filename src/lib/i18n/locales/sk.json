@@ -1,0 +1,84 @@
+{
+  "hub": {
+    "title": "Em1t | Stredisko",
+    "hero": "Vitajte v mojom vývojovom centre. Robím tu náhodné veci.",
+    "button1": "Portfólio",
+    "button2": "Hry"
+  },
+  "portfolio": {
+    "title": "Em1t | Portfólio",
+    "logo1": {
+      "title": "Logo Em1t #1",
+      "description": "Toto je úplne prvý koncept môjho loga."
+    },
+    "logo2": {
+      "title": "Logo Em1t #2",
+      "description": "Pôvodná verzia môjho loga. Ďalej sú len variácie."
+    },
+    "logo3": {
+      "title": "Logo Em1t #3",
+      "description": "Pridal som k tomu malý 3D efekt a zmenil som farby."
+    },
+    "logo4": {
+      "title": "Logo Em1t #4",
+      "description": "Do „1“ som pridal srdiečko, pretože mám pocit, že je to osobnejšie."
+    },
+    "background": {
+      "title": "Pokus o pozadie #1",
+      "description": "Toto bolo vytvorené vo Photoshope ešte v roku 2018. Skúsil som vytvoriť jednoduché pozadie pre moju školskú prezentáciu."
+    },
+    "m4": {
+      "title": "Blender 3D model #1",
+      "description": "Vytvoril som detailný 3D model útočnej pušky M4A1 (som fanúšikom FPS hier). Tento model bol použitý v mojom vlastnom koncepte hry FPS."
+    },
+    "earth": {
+      "title": "Blender 3D model #2",
+      "description": "Tento 3D model som vytvoril ja, s pomocou BlenderGuru tutoriálu. Napriek tomu je to dosť pôsobivé."
+    },
+    "game": {
+      "title": "FPS game concept #1",
+      "description": "V tomto koncepte sa mi podarilo vytvoriť ovládač postavy FPS, importovať vlastný 3D model M4 a vytvoriť množstvo animácií vrátane streľby."
+    },
+    "page1": {
+      "title": "Webová stránka #1",
+      "description": "Tento web som vytvoril pre môj planovaný startup. Počas procesu návrhu prešiel mnohými iteráciami, ale s týmto som sa uspokojil. Nájdete ho na https://ametrine.host"
+    },
+    "page2": {
+      "title": "Login/Register #1",
+      "description": "Táto registračná stránka bude použitá v mojom osobnom projekte GitHub. Toto je prvý návrh, ktorý som vytvoril pre túto stránku registrácie a s najväčšou pravdepodobnosťou si ho ponechám."
+    },
+    "lin1": {
+      "title": "Logo Lin #1",
+      "description": "Toto bola profilová fotka, ktorú som vytvoril pre svojho bota na moderovanie Discordových serverov."
+    },
+    "lin2": {
+      "title": "Logo Lin #2",
+      "description": "Lin logo ale pre vývojový server, kde som testoval nové funkcie."
+    }
+  },
+  "games": {
+    "title": "Em1t | Hry",
+    "hero": {
+      "h1": "Prosím vráť sa neskôr!",
+      "h2": "Táto stránka je vo vývoji."
+    }
+  },
+  "contact": {
+    "title": "Em1t | Kontakt",
+    "h1": "Pošlite mi správu",
+    "h2": "Kontaktujte ma",
+    "description": "Som otvorený pre akékoľvek návrhy, pracovné ponuky alebo si len tak pokecať.",
+    "form": {
+      "name": "Meno",
+      "email": "Email",
+      "subject": "Predmet",
+      "content": "Obsah",
+      "submit": "Odoslať"
+    }
+  },
+  "navigation": {
+    "portfolio": "Portfólio",
+    "games": "Hry",
+    "contact": "Kontakt"
+  }
+}
