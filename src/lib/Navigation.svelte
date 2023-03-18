@@ -1,5 +1,25 @@
 <!--INSPIRED BY TAILWINDCSS NAVBAR-->
 
+<script lang="ts">
+	import { _, locale } from 'svelte-i18n';
+
+	let flags = {
+		"en": "/i18n/en.webp",
+		"sk": "/i18n/sk.webp"
+	};
+
+	$: flag = flags[$locale as keyof typeof flags];
+
+	$: if(!flag){
+		flag = "/i18n/en.webp";
+	};
+
+	function changeLocale(newLocale: string){
+		locale.set(newLocale);
+	};
+
+</script>
+
 <header
 	class="w-full fixed top-0 left-0 bg-slate-900/25 backdrop-blur z-40 border-b border-slate-300/10 select-none"
 >
@@ -11,13 +31,13 @@
 					<nav class="text-sm leading-6 font-semibold text-slate-200 max-sm:hidden">
 						<ul class="flex space-x-8">
 							<li>
-								<a class="hover:text-sky-400" href="/portfolio">Portfolio</a>
+								<a class="hover:text-sky-400" href="/portfolio">{$_("navigation.portfolio")}</a>
 							</li>
 							<li>
-								<a class="hover:text-sky-400" href="/games">Games</a>
+								<a class="hover:text-sky-400" href="/games">{$_("navigation.games")}</a>
 							</li>
 							<li>
-								<a class="hover:text-sky-400" href="/contact">Contact</a>
+								<a class="hover:text-sky-400" href="/contact">{$_("navigation.contact")}</a>
 							</li>
 							<li>
 								<a aria-disabled="true" class="opacity-50 cursor-default" href="/">
@@ -28,9 +48,27 @@
 									>
 								</a>
 							</li>
+							<li class="grid place-items-center">
+								<div class="dropdown flex relative border-l border-slate-300/10 pl-6">
+									<button 
+										aria-label="Open navigation"
+										class="text-slate-200 font-semibold rounded flex items-center hover:text-sky-500"
+									>
+									<img src="{flag}" alt="Language" width=30>
+									</button>
+									<ul class="dropdown-menu absolute hidden text-slate-200 top-6 -left-32 w-48 rounded overflow-hidden">
+										<li>
+											<button on:click={()=>{changeLocale("en")}} class="hover:text-sky-400 py-2 px-4 whitespace-nowrap bg-black/80 w-full text-left flex flex-row gap-2"><img src="{flags.en}" alt="" width=30 class="py-1"> English</button>
+										</li>
+										<li>
+											<button on:click={()=>{changeLocale("sk")}} class="hover:text-sky-400 py-2 px-4 whitespace-nowrap bg-black/80 w-full text-left flex flex-row gap-2"><img src="{flags.sk}" alt="" width=30 class="py-1"> Slovak</button>
+										</li>
+									</ul>
+								</div>
+							</li>
 						</ul>
 					</nav>
-					<nav class="text-sm leading-6 font-semibold text-slate-200 hidden max-sm:block">
+					<nav class="text-sm leading-6 font-semibold text-slate-200 hidden max-sm:flex flex-row gap-4 border-l border-slate-300/10 pl-6">
 						<div class="dropdown flex relative">
 							<button 
 								aria-label="Open navigation"
@@ -42,13 +80,13 @@
 							</button>
 							<ul class="dropdown-menu absolute hidden text-slate-200 top-6 -left-40 w-48 rounded overflow-hidden">
 								<li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap bg-black/80" href="/portfolio">Portfolio</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap bg-black/80" href="/portfolio">{$_("navigation.portfolio")}</a>
                                 </li>
                                 <li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/games">Games</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/games">{$_("navigation.games")}</a>
                                 </li>
                                 <li>
-                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/contact">Contact</a>
+                                    <a class="hover:text-sky-400 py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/contact">{$_("navigation.contact")}</a>
                                 </li>
                                 <li>
                                     <a aria-disabled="true" class="text-slate-500 cursor-default py-2 px-4 block whitespace-nowrap border-t border-slate-300/10 bg-black/80" href="/">
@@ -61,6 +99,24 @@
                                 </li>
 							</ul>
 						</div>
+						<li class="grid place-items-center">
+							<div class="dropdown flex relative">
+								<button 
+									aria-label="Open navigation"
+									class="text-slate-200 font-semibold rounded flex items-center hover:text-sky-500"
+								>
+								<img src="{flag}" alt="Language" width=30>
+								</button>
+								<ul class="dropdown-menu absolute hidden text-slate-200 top-6 -left-40 w-48 rounded overflow-hidden">
+									<li>
+										<button on:click={()=>{changeLocale("en")}} class="hover:text-sky-400 py-2 px-4 whitespace-nowrap bg-black/80 w-full text-left flex flex-row gap-2"><img src="{flags.en}" alt="" width=30 class="py-1"> English</button>
+									</li>
+									<li>
+										<button on:click={()=>{changeLocale("sk")}} class="hover:text-sky-400 py-2 px-4 whitespace-nowrap bg-black/80 w-full text-left flex flex-row gap-2"><img src="{flags.sk}" alt="" width=30 class="py-1"> Slovak</button>
+									</li>
+								</ul>
+							</div>
+						</li>
 					</nav>
 				</div>
 			</div>
@@ -69,7 +125,7 @@
 </header>
 
 <style>
-	.dropdown:hover .dropdown-menu {
+	.dropdown:focus-within .dropdown-menu {
 		display: block;
 	}
 </style>

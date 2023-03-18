@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	import { _ } from 'svelte-i18n';
+
 	let blob: HTMLElement;
 	onMount(()=>{
 		document.body.onpointermove = ({clientX, clientY}) => {
@@ -13,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>Em1t | Games</title>
+	<title>{$_("games.title")}</title>
 	<meta
 		name="description"
 		content="Play minigames for free. Made for fun, just for fun."
@@ -97,8 +99,8 @@
 		</div>
 		<div class="w-full h-full grid place-items-center">
 			<span class="text-center">
-				<h1 class="text-3xl lg:text-4xl text-white">Please come back later!</h1>
-				<h2 class="text-md lg:text-xl text-slate-400">This page is under construction.</h2>
+				<h1 class="text-3xl lg:text-4xl text-white">{$_("games.hero.h1")}</h1>
+				<h2 class="text-md lg:text-xl text-slate-400">{$_("games.hero.h2")}</h2>
 			</span>
 		</div>
 	</main>

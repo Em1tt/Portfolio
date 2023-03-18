@@ -1,0 +1,84 @@
+{
+  "hub": {
+    "title": "Em1t | Hub",
+    "hero": "Welcome to my development hub. I do random things here.",
+    "button1": "Portfolio",
+    "button2": "Games"
+  },
+  "portfolio": {
+    "title": "Em1t | Portfolio",
+    "logo1": {
+      "title": "Em1t's logo #1",
+      "description": "This is the very first concept of my logo."
+    },
+    "logo2": {
+      "title": "Em1t's logo #2",
+      "description": "The original version of my logo. Next are just variations."
+    },
+    "logo3": {
+      "title": "Em1t's logo #3",
+      "description": "I have added a small 3D effect to it, and changed the colors."
+    },
+    "logo4": {
+      "title": "Em1t's logo #4",
+      "description": "I've added a heart to the '1' as I feel like it's more personal."
+    },
+    "background": {
+      "title": "Background attempt #1",
+      "description": "This was made in Photoshop back in 2018. I tried creating a simple background for my school presentation."
+    },
+    "m4": {
+      "title": "Blender 3D model #1",
+      "description": "I have created a detailed 3D model of an M4A1 assault rifle (I'm a fan of FPS games). This model was used in my own FPS game concept."
+    },
+    "earth": {
+      "title": "Blender 3D model #2",
+      "description": "This 3D model was created by me, with the help of a BlenderGuru tutorial. Nevertheless, it's pretty impressive."
+    },
+    "game": {
+      "title": "FPS game concept #1",
+      "description": "In this concept, I have managed to create an FPS character controller, imported my own 3D model of an M4, and created plenty of animations, including shooting."
+    },
+    "page1": {
+      "title": "Website #1",
+      "description": "This website was created by me for my planned startup. It has gone through many iterations during the design process, but this is what I settled for. You can find it on https://ametrine.host"
+    },
+    "page2": {
+      "title": "Login/Register #1",
+      "description": "This register page will be used in my personal GitHub project. This is the first design I've made for this register page and I will most likely keep it."
+    },
+    "lin1": {
+      "title": "Lin logo #1",
+      "description": "This was a profile picture which I made for my Discord moderation bot."
+    },
+    "lin2": {
+      "title": "Lin logo #2",
+      "description": "Lin logo but for the development server, where I tested new features."
+    }
+  },
+  "games": {
+    "title": "Em1t | Games",
+    "hero": {
+      "h1": "Please come back later!",
+      "h2": "This page is under construction."
+    }
+  },
+  "contact": {
+    "title": "Em1t | Contact",
+    "h1": "Send me a message",
+    "h2": "Contact me",
+    "description": "I'm open for any suggestions, job offers, or just to chat",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "content": "Content",
+      "submit": "Submit"
+    }
+  },
+  "navigation": {
+    "portfolio": "Portfolio",
+    "games": "Games",
+    "contact": "Contact"
+  }
+}

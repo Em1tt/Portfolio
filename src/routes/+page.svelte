@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
     import Scramble from '$lib/Scramble.svelte';
-
+	import { _ } from 'svelte-i18n';
 	let blob: HTMLElement;
 	onMount(()=>{
 		document.body.onpointermove = ({clientX, clientY}) => {
@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>Em1t | Home</title>
+	<title>{$_("hub.title")}</title>
 	<meta
 		name="description"
 		content="Welcome to em1t.dev. This website serves as a way to demonstrate my practical skills to people. It includes my portfolio, games, and in the future APIs."
@@ -40,10 +40,10 @@
 			<Scramble>
 				<h1 class="text-5xl xl:text-7xl text-neutral-200 text-center" data-value="EM1T.DEV">EM1T.DEV</h1>
 			</Scramble>
-			<p class="mt-8 text-center mx-4 text-neutral-300">Welcome to my development hub, I hope you enjoy it.</p>
+			<p class="mt-8 text-center mx-4 text-neutral-300">{$_("hub.hero")}</p>
 			<div class="mt-8 flex justify-center gap-8">
-				<a href="/portfolio" class="bg-sky-400/25 border border-sky-500 p-4 rounded text-sky-200 hover:bg-sky-400/40 hover:border-sky-400">Portfolio</a>
-				<a href="/games" class="bg-pink-400/25 border border-pink-500 p-4 rounded text-pink-200 hover:bg-pink-400/40 hover:border-pink-400">Games</a>
+				<a href="/portfolio" class="bg-sky-400/25 border border-sky-500 p-4 rounded text-sky-200 hover:bg-sky-400/40 hover:border-sky-400">{$_("hub.button1")}</a>
+				<a href="/games" class="bg-pink-400/25 border border-pink-500 p-4 rounded text-pink-200 hover:bg-pink-400/40 hover:border-pink-400">{$_("hub.button2")}</a>
 			</div>
 		</div>
 	</main>

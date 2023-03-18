@@ -2,6 +2,8 @@
 	import axios from 'axios';
 	import Toast from '$lib/Toast.svelte';
 
+	import { _ } from 'svelte-i18n';
+
 	let name: string, email: string, subject: string, content: string;
 
     let showToast = false, title: string, text: string, color: string;
@@ -41,7 +43,7 @@
 </script>
 
 <svelte:head>
-	<title>Em1t | Contact</title>
+	<title>{$_("contact.title")}</title>
 	<meta
 		name="description"
 		content="Get in touch with me, whether for work, or just to chat."
@@ -67,29 +69,29 @@
     <main class="w-full grid place-items-center py-10 min-h-screen">
         <div class="grid grid-cols-1 drop-shadow-lg p-4 py-12 md:grid-cols-2 w-screen md:w-auto">
             <form on:submit|preventDefault={submit} class="bg-gradient-to-br from-cyan-500 to-blue-500 p-4 selection:bg-pink-500 rounded-tl rounded-tr md:rounded-tr-none md:rounded-bl md:p-14 border border-gray-300/30">
-                <h1 class="text-3xl text-left text-white">Send me a message</h1>
+                <h1 class="text-3xl text-left text-white">{$_("contact.h1")}</h1>
                 <fieldset class="flex flex-col-reverse mt-4">
                     <input bind:value={name} class="text-gray-100 py-1 bg-transparent border-b border-gray-100/60 outline-none" type="text" name="name" id="name">
-                    <label class="text-gray-200/90" for="name">Name</label>
+                    <label class="text-gray-200/90" for="name">{$_("contact.form.name")}</label>
                 </fieldset>
                 <fieldset class="flex flex-col-reverse mt-2">
                     <input bind:value={email} class="text-gray-100 py-1 bg-transparent border-b border-gray-100/60 outline-none" type="email" name="email" id="email">
-                    <label class="text-gray-200/90" for="email">Email</label>
+                    <label class="text-gray-200/90" for="email">{$_("contact.form.email")}</label>
                 </fieldset>
                 <fieldset class="flex flex-col-reverse mt-2">
                     <input bind:value={subject} class="text-gray-100 py-1 bg-transparent border-b border-gray-100/60 outline-none" type="text" name="subject" id="subject">
-                    <label class="text-gray-200/90" for="subject">Subject</label>
+                    <label class="text-gray-200/90" for="subject">{$_("contact.form.subject")}</label>
                 </fieldset>
                 <fieldset class="flex flex-col-reverse mt-2">
                     <textarea bind:value={content} class="resize-none py-1 text-gray-100 bg-transparent border-b border-gray-100/60 outline-none" name="content" id="content" rows="7"></textarea>
-                    <label class="text-gray-200/90" for="content">Content</label>
+                    <label class="text-gray-200/90" for="content">{$_("contact.form.content")}</label>
                 </fieldset>
-                <button type="submit" class="px-6 py-3 mt-2 rounded bg-white hover:bg-gray-300">Submit</button>
+                <button type="submit" class="px-6 py-3 mt-2 rounded bg-white hover:bg-gray-300">{$_("contact.form.submit")}</button>
             </form>
             <div class="bg-slate-900 p-4 md:p-14">
-                <h1 class="text-3xl text-slate-200">Contact me</h1>
+                <h2 class="text-3xl text-slate-200">{$_("contact.h2")}</h2>
                 <span id="underline" class="w-9 mt-1 mb-2 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 block"></span>
-                <p class="w-3/4 md:w-80 text-slate-400">I'm open for any suggestions, job offers, or just to chat</p>
+                <p class="w-3/4 md:w-80 text-slate-400">{$_("contact.description")}</p>
                 <div class="flex flex-row flex-nowrap mt-6 text-slate-200 items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
