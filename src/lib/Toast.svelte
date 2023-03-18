@@ -3,7 +3,7 @@
     export let title: string;
     export let text: string;
     export let color: string = "green";
-    import { fly, fade } from 'svelte/transition';
+    import { fly } from 'svelte/transition';
 </script>
 
 {#if show}

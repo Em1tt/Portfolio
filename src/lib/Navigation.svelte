@@ -18,11 +18,32 @@
 		locale.set(newLocale);
 	};
 
+    import { fly } from 'svelte/transition';
+	let showAnnouncement = true;
+	function hideAnnouncement(){
+		showAnnouncement = false
+	}
 </script>
 
 <header
 	class="w-full fixed top-0 left-0 bg-slate-900/25 backdrop-blur z-40 border-b border-slate-300/10 select-none"
 >
+	{#if showAnnouncement}
+	<div transition:fly="{{y:-20, duration: 500}}" class="hidden w-full bg-white p-1 lg:grid place-items-center">
+		<a href="https://www.juniorinternet.sk/cms/" target="_blank" rel="noreferrer" class="flex flex-row flex-wrap gap-4 items-center justify-center">
+			<img src="/junior internet.png" width="200" alt="">
+			<p class="text-sm text-center">{$_("navigation.announcement")}</p>
+		</a>
+		<button on:click={hideAnnouncement} class="float-right fixed right-0 mr-2">
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+				<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+				<path d="M10 10l4 4m0 -4l-4 4"></path>
+			 </svg>
+		</button>
+
+	</div>
+	{/if}
 	<div class="mx-auto max-w-7xl">
 		<div class="py-4 px-8">
 			<div class="relative flex items-center">
