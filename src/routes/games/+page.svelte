@@ -1,17 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	import { _ } from 'svelte-i18n';
-
-	let blob: HTMLElement;
-	onMount(()=>{
-		document.body.onpointermove = ({clientX, clientY}) => {
-			blob.animate({
-				left: `${clientX-blob.clientWidth/2}px`,
-				top: `${clientY-blob.clientHeight/2}px`
-			}, {duration: 1000, fill: "forwards"});
-		};
-	});
 </script>
 
 <svelte:head>
