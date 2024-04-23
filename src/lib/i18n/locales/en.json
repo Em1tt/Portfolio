@@ -7,53 +7,57 @@
   },
   "portfolio": {
     "title": "Em1t | Portfolio",
-    "logo1": {
-      "title": "Em1t's logo #1",
-      "description": "This is the very first concept of my logo."
+    "admin": {
+      "title": "Admin Login Screen",
+      "description": "This is a login screen for an admin panel. It's a part of my 'Stredoškolská Odborná Činnosť' project I'm working on in my free time. The design is simple and clean. The background is an abstract art of waves. The app uses SvelteKit with TailwindCSS and PocketBase for the backend."
     },
-    "logo2": {
-      "title": "Em1t's logo #2",
-      "description": "The original version of my logo. Next are just variations."
+    "clientArea": {
+      "title": "Client area",
+      "description": "This is a client area for my 'Stredoškolská Odborná Činnosť' project, where I'm creating a website for a local company. The design is simple and clean, with a light theme. The app uses SvelteKit with TailwindCSS and PocketBase for the backend."
     },
-    "logo3": {
-      "title": "Em1t's logo #3",
-      "description": "I have added a small 3D effect to it, and changed the colors."
+    "supportSystem": {
+      "title": "Support system",
+      "description": "Support system for my project that is currently on-hold. I experimented with SvelteKit components a lot, and created a versatile table system that can be used in many different ways. The app uses SvelteKit with TailwindCSS and PocketBase for the backend."
     },
-    "logo4": {
-      "title": "Em1t's logo #4",
-      "description": "I've added a heart to the '1' as I feel like it's more personal."
+    "supportMessages": {
+      "title": "Support messages",
+      "description": "Realtime support messages for my project that is currently on-hold. Messages support mark-up, and can even have file/image attachments. The app uses SvelteKit with TailwindCSS and PocketBase for the backend."
     },
-    "background": {
-      "title": "Background attempt #1",
-      "description": "This was made in Photoshop back in 2018. I tried creating a simple background for my school presentation."
+    "zubzen": {
+      "title": "ZubZen - regional round Zenit WebDeveloper 2023",
+      "description": "This is a website for a fictional dental clinic. It was created for the regional round of the Zenit WebDeveloper 2023 competition. The design was traced 1:1 from a reference image, and the website is fully responsive. It was coded in PHP with pure CSS in 4 hours."
+    },
+    "texnet": {
+      "title": "TexNet - work experience",
+      "description": "This redesign of the TexNet website was created during my work experience at TexNet s.r.o. I completely revamped the navigation and layout of the website to make it more modern. I used PHP and plain CSS for this project. I have also worked on various networking devices and configured an AI traffic camera."
     },
     "m4": {
-      "title": "Blender 3D model #1",
-      "description": "I have created a detailed 3D model of an M4A1 assault rifle (I'm a fan of FPS games). This model was used in my own FPS game concept."
+      "title": "3D model: M4A1",
+      "description": "This 3D model was created by me. It's a pretty simple model, but it's a good start for me. I'm planning to create more complex models in the future."
+    },
+    "mk47": {
+      "title": "3D model: MK47 Mutant",
+      "description": "I created this 3D model using a reference image directly from CMMG. It's a pretty complex model, but I managed to finish it. The internals of this gun are semi-modelled aswell."
     },
     "earth": {
-      "title": "Blender 3D model #2",
-      "description": "This 3D model was created by me, with the help of a BlenderGuru tutorial. Nevertheless, it's pretty impressive."
+      "title": "3D model: The Earth",
+      "description": "This 3D model was an experiment where I learnt texturing and UV mapping. This model was created with the help of a BlenderGuru tutorial."
     },
-    "game": {
-      "title": "FPS game concept #1",
-      "description": "In this concept, I have managed to create an FPS character controller, imported my own 3D model of an M4, and created plenty of animations, including shooting."
+    "robarty": {
+      "title": "Robarty",
+      "description": "I have been tasked with creating a complete corporate identity for a made-up company. I created a logo, business card, letterhead, and a design manual."
     },
-    "page1": {
-      "title": "Website #1",
-      "description": "This website was created by me for my planned startup. It has gone through many iterations during the design process, but this is what I settled for. You can find it on https://ametrine.host"
+    "mockup": {
+      "title": "Mockup",
+      "description": "I have been tasked with creating a mockup for a vitamins box with the taste of melon and sweet potatoes. The design is unique, as I tried to create a new concept, and explore futuristic design mixed with simplicity."
     },
-    "page2": {
-      "title": "Login/Register #1",
-      "description": "This register page will be used in my personal GitHub project. This is the first design I've made for this register page and I will most likely keep it."
+    "logo": {
+      "title": "Logo: Previous iteration",
+      "description": "This is my logo that I used for a long time. The logo is a combination of the letter 'E' and the number '1'. The logo was used in the development of my projects."
     },
-    "lin1": {
-      "title": "Lin logo #1",
-      "description": "This was a profile picture which I made for my Discord moderation bot."
-    },
-    "lin2": {
-      "title": "Lin logo #2",
-      "description": "Lin logo but for the development server, where I tested new features."
+    "logo2": {
+      "title": "Logo: Current iteration",
+      "description": "This is my current logo. The logo is a combination of the letter 'E' and the number '1'. The logo is more modern and clean, and it's actively used in the development of my projects. I added a heart to the logo, to symbolize my passion for graphic design."
     }
   },
   "games": {

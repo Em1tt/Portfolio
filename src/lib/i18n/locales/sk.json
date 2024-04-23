@@ -7,53 +7,57 @@
   },
   "portfolio": {
     "title": "Em1t | Portfólio",
-    "logo1": {
-      "title": "Logo Em1t #1",
-      "description": "Toto je úplne prvý koncept môjho loga."
+    "admin": {
+      "title": "Prihlasovacia obrazovka správcu",
+      "description": "Toto je prihlasovacia obrazovka pre administračný panel. Je to súčasť môjho projektu pre Stredoškolskú odbornú činnosť, na ktorom pracujem vo voľnom čase. Dizajn je jednoduchý a čistý. Pozadie je abstraktné umenie vĺn. Aplikácia používa SvelteKit s TailwindCSS a PocketBase pre backend."
     },
-    "logo2": {
-      "title": "Logo Em1t #2",
-      "description": "Pôvodná verzia môjho loga. Ďalej sú len variácie."
+    "clientArea": {
+      "title": "Klientska oblasť",
+      "description": "Toto je klientska oblasť pre môj projekt pre Stredoškolskú Odbornú Činnosť, kde vytváram web pre miestnu firmu. Dizajn je jednoduchý a čistý, so svetlou témou. Aplikácia používa SvelteKit s TailwindCSS a PocketBase pre backend."
     },
-    "logo3": {
-      "title": "Logo Em1t #3",
-      "description": "Pridal som k tomu malý 3D efekt a zmenil som farby."
+    "supportSystem": {
+      "title": "Podporný systém",
+      "description": "Systém podpory pre môj projekt, ktorý je momentálne pozastavený. Veľa som experimentoval s komponentmi SvelteKit a vytvoril som všestranný stolový systém, ktorý sa dá použiť mnohými rôznymi spôsobmi. Aplikácia používa SvelteKit s TailwindCSS a PocketBase pre backend."
     },
-    "logo4": {
-      "title": "Logo Em1t #4",
-      "description": "Do „1“ som pridal srdiečko, pretože mám pocit, že je to osobnejšie."
+    "supportMessages": {
+      "title": "Podporné správy",
+      "description": "Správy podpory v reálnom čase pre môj projekt, ktorý je momentálne pozastavený. Správy podporujú označovanie a môžu dokonca obsahovať súbory/obrázkové prílohy. Aplikácia používa SvelteKit s TailwindCSS a PocketBase pre backend."
     },
-    "background": {
-      "title": "Pokus o pozadie #1",
-      "description": "Toto bolo vytvorené vo Photoshope ešte v roku 2018. Skúsil som vytvoriť jednoduché pozadie pre moju školskú prezentáciu."
+    "zubzen": {
+      "title": "ZubZen - krajské kolo Zenit WebDeveloper 2023",
+      "description": "Toto je webová stránka fiktívnej zubnej ambulancie. Bol vytvorený pre krajské kolo súťaže Zenit WebDeveloper 2023. Dizajn bol vysledovaný v pomere 1:1 z referenčného obrázka a web je plne responzívny. Bol nakódovaný v PHP s čistým CSS za 4 hodiny."
+    },
+    "texnet": {
+      "title": "TexNet - pracovná prax",
+      "description": "Tento redizajn webu TexNet vznikol počas mojej pracovnej skúsenosti v TexNet sro. Kompletne som prerobil navigáciu a vzhľad stránky, aby bola modernejšia. Pre tento projekt som použil PHP a obyčajný CSS. Pracoval som aj na rôznych sieťových zariadeniach a konfiguroval som AI dopravnú kameru."
     },
     "m4": {
-      "title": "Blender 3D model #1",
-      "description": "Vytvoril som detailný 3D model útočnej pušky M4A1 (som fanúšikom FPS hier). Tento model bol použitý v mojom vlastnom koncepte hry FPS."
+      "title": "3D model: M4A1",
+      "description": "Tento 3D model som vytvoril ja. Je to celkom jednoduchý model, ale pre mňa je to dobrý začiatok. V budúcnosti plánujem vytvárať zložitejšie modely."
+    },
+    "mk47": {
+      "title": "3D model: CMMG RESOLUTE, Mk47",
+      "description": "Tento 3D model som vytvoril pomocou referenčného obrázku priamo z CMMG. Je to dosť zložitý model, ale podarilo sa mi ho dokončiť. Vnútorné časti tejto zbrane sú tiež z malej časti modelované."
     },
     "earth": {
-      "title": "Blender 3D model #2",
-      "description": "Tento 3D model som vytvoril ja, s pomocou BlenderGuru tutoriálu. Napriek tomu je to dosť pôsobivé."
+      "title": "3D model: Zem",
+      "description": "Tento 3D model bol experiment, kde som sa naučil textúrovanie a UV mapovanie. Tento model bol vytvorený pomocou tutoriálu BlenderGuru."
     },
-    "game": {
-      "title": "FPS game concept #1",
-      "description": "V tomto koncepte sa mi podarilo vytvoriť ovládač postavy FPS, importovať vlastný 3D model M4 a vytvoriť množstvo animácií vrátane streľby."
+    "robarty": {
+      "title": "Robarty",
+      "description": "Dostal som za úlohu vytvoriť kompletnú firemnú identitu pre vymyslenú spoločnosť. Vytvoril som logo, vizitku, hlavičkový papier a dizajn manuál."
     },
-    "page1": {
-      "title": "Webová stránka #1",
-      "description": "Tento web som vytvoril pre môj planovaný startup. Počas procesu návrhu prešiel mnohými iteráciami, ale s týmto som sa uspokojil. Nájdete ho na https://ametrine.host"
+    "mockup": {
+      "title": "Mockup",
+      "description": "Dostal som za úlohu vytvoriť maketu krabičky na vitamíny s príchuťou melónu a sladkých zemiakov. Dizajn je jedinečný, pretože som sa snažil vytvoriť nový koncept a preskúmať futuristický dizajn zmiešaný s jednoduchosťou."
     },
-    "page2": {
-      "title": "Login/Register #1",
-      "description": "Táto registračná stránka bude použitá v mojom osobnom projekte GitHub. Toto je prvý návrh, ktorý som vytvoril pre túto stránku registrácie a s najväčšou pravdepodobnosťou si ho ponechám."
+    "logo": {
+      "title": "Logo: Predošlá verzia",
+      "description": "Toto je moje logo, ktoré používam už dlho. Logo je kombináciou písmena „E“ a čísla „1“. Logo bolo použité pri vývoji mojich projektov."
     },
-    "lin1": {
-      "title": "Logo Lin #1",
-      "description": "Toto bola profilová fotka, ktorú som vytvoril pre svojho bota na moderovanie Discordových serverov."
-    },
-    "lin2": {
-      "title": "Logo Lin #2",
-      "description": "Lin logo ale pre vývojový server, kde som testoval nové funkcie."
+    "logo2": {
+      "title": "Logo: Aktuálna verzia",
+      "description": "Toto je moje aktuálne logo. Logo je kombináciou písmena „E“ a čísla „1“. Logo je modernejšie a čistejšie a aktívne ho používam pri vývoji mojich projektov. K logu som pridal srdiečko, ktoré symbolizuje moju vášeň pre grafický dizajn."
     }
   },
   "games": {

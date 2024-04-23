@@ -19,7 +19,7 @@
 	};
 
     import { fly } from 'svelte/transition';
-	let showAnnouncement = true;
+	let showAnnouncement = false;
 	function hideAnnouncement(){
 		showAnnouncement = false
 	}
