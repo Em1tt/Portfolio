@@ -105,17 +105,19 @@
   />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@Em1ttt" />
-  <meta property="og:url" content="https://em1t.dev" />
+  <meta property="og:url" content="https://em1t.xyz" />
   <meta property="og:title" content="Em1t | Developer & designer" />
   <meta
     property="og:description"
     content="Welcome to my portfolio. Here you can see some of the projects I've made in the past few years that I'm the most proud of."
   />
+  <!--
   <meta property="og:image" content="https://em1t.dev/Em1t.png" />
   <meta property="og:image:secure_url" content="https://em1t.dev/Em1t.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="840" />
   <meta property="og:image:height" content="590" />
+  -->
 </svelte:head>
 
 <div
@@ -187,7 +189,7 @@
     <Zen />
   </div>
   <main bind:this={gallery} class="pt-14">
-    <div class="grid grid-cols-12 auto-rows-fr gap-2 px-2">
+    <div class="grid grid-cols-12 auto-rows-min gap-2 px-2">
       <div
         class="flex aspect-[2/1] lg:aspect-[3/2] col-span-12 lg:col-span-6 lg:bg-center group bg-[url(/portfolio/Admin.png)] bg-left bg-cover rounded-md overflow-hidden"
       >
@@ -287,7 +289,7 @@
         </div>
       </div>
       <div
-        class="flex aspect-[2/1] lg:aspect-[3/2] col-span-12 lg:col-span-6 lg:bg-center group bg-[url(/portfolio/MK47.png)] bg-left bg-contain rounded-md overflow-hidden"
+        class="flex aspect-[2/1] lg:aspect-[3/2] col-span-12 lg:col-span-6 lg:bg-center group bg-[url(/portfolio/MK47.png)] bg-left bg-cover lg:bg-contain rounded-md overflow-hidden"
       >
         <div
           class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4"
@@ -329,7 +331,7 @@
         </div>
       </div>
       <div
-        class="flex aspect-square col-span-6 lg:col-span-4 group bg-[url(/portfolio/Mockup1.png)] bg-left sm:bg-center bg-cover overflow-hidden rounded-md"
+        class="flex aspect-square col-span-12 sm:col-span-12 lg:col-span-4 group bg-[url(/portfolio/Mockup1.png)] bg-left sm:bg-center bg-cover overflow-hidden rounded-md"
       >
         <div
           class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4"
@@ -343,7 +345,7 @@
         </div>
       </div>
       <div
-        class="flex aspect-square col-span-6 lg:col-span-4 group bg-[url(/portfolio/logo4.png)] bg-left sm:bg-center bg-cover overflow-hidden rounded-md"
+        class="flex aspect-square col-span-12 sm:col-span-6 lg:col-span-4 group bg-[url(/portfolio/logo4.png)] bg-left sm:bg-center bg-cover overflow-hidden rounded-md"
       >
         <div
           class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4"
@@ -357,7 +359,7 @@
         </div>
       </div>
       <div
-        class="flex aspect-square col-span-6 lg:col-span-4 group bg-[url(/portfolio/logo5.png)] bg-left sm:bg-center bg-cover overflow-hidden rounded-md"
+        class="flex aspect-square col-span-12 sm:col-span-6 lg:col-span-4 group bg-[url(/portfolio/logo5.png)] bg-left sm:bg-center bg-cover overflow-hidden rounded-md"
       >
         <div
           class="group-hover:backdrop-blur-xl w-full h-full group-hover:bg-black/60 duration-200 opacity-0 group-hover:opacity-100 p-4"

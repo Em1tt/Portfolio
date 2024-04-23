@@ -21,24 +21,26 @@
 	/>
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:creator" content="@Em1ttt" />
-	<meta property="og:url" content="https://em1t.dev" />
+	<meta property="og:url" content="https://em1t.xyz" />
 	<meta property="og:title" content="Em1t | Developer & designer" />
 	<meta
 		property="og:description"
 		content="Welcome to em1t.dev. This website serves as a way to demonstrate my practical skills to people. It includes my portfolio, games, and in the future APIs."
 	/>
+	<!--
     <meta property="og:image" content="https://em1t.dev/Em1t.png" />
 	<meta property="og:image:secure_url" content="https://em1t.dev/Em1t.png" />
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="840">
 	<meta property="og:image:height" content="590">
+	-->
 </svelte:head>
 
 <div class="bg-gray-900">
 	<main class="grid w-screen h-screen place-items-center z-20 absolute">
 		<div>
 			<Scramble>
-				<h1 class="text-5xl xl:text-7xl text-neutral-200 text-center" data-value="EM1T.DEV">EM1T.DEV</h1>
+				<h1 class="text-5xl xl:text-7xl text-neutral-200 text-center" data-value="EM1T.XYZ">EM1T.XYZ</h1>
 			</Scramble>
 			<p class="mt-8 text-center mx-4 text-neutral-300">{$_("hub.hero")}</p>
 			<div class="mt-8 flex justify-center gap-8">
